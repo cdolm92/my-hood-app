@@ -5,6 +5,20 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+        </mutableArray>
+        <mutableArray key="HelveticaNeueLights.ttc">
+            <string>HelveticaNeue-LightItalic</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -30,7 +44,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barrel-water-bridge" translatesAutoresizingMaskIntoConstraints="NO" id="Bay-EM-VS2">
-                                                    <rect key="frame" x="8" y="8" width="70" height="70"/>
+                                                    <rect key="frame" x="8" y="9" width="70" height="70"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="70" id="0XZ-yW-Kld"/>
                                                         <constraint firstAttribute="width" constant="70" id="4x9-dy-WFg"/>
@@ -58,13 +72,29 @@
                                             <constraints>
                                                 <constraint firstItem="b1C-qg-JFY" firstAttribute="top" secondItem="98C-Zs-uDV" secondAttribute="bottom" constant="3" id="4ui-fO-fph"/>
                                                 <constraint firstItem="b1C-qg-JFY" firstAttribute="leading" secondItem="Bay-EM-VS2" secondAttribute="trailing" constant="8" id="Ddb-D4-U40"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Bay-EM-VS2" secondAttribute="bottom" id="JnF-i9-qj2"/>
+                                                <constraint firstItem="Bay-EM-VS2" firstAttribute="centerY" secondItem="Jzj-eJ-f0w" secondAttribute="centerY" id="KiL-yv-lie"/>
                                                 <constraint firstItem="98C-Zs-uDV" firstAttribute="leading" secondItem="Bay-EM-VS2" secondAttribute="trailing" constant="8" id="N0J-br-6ao"/>
+                                                <constraint firstItem="Bay-EM-VS2" firstAttribute="centerY" secondItem="Jzj-eJ-f0w" secondAttribute="centerY" id="NKG-YR-UcU"/>
                                                 <constraint firstItem="b1C-qg-JFY" firstAttribute="trailing" secondItem="Jzj-eJ-f0w" secondAttribute="trailingMargin" id="Ott-Cj-cmq"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Bay-EM-VS2" secondAttribute="bottom" id="U4C-YK-LN9"/>
+                                                <constraint firstItem="Bay-EM-VS2" firstAttribute="centerY" secondItem="Jzj-eJ-f0w" secondAttribute="centerY" id="Y0C-CQ-Jcc"/>
                                                 <constraint firstItem="98C-Zs-uDV" firstAttribute="trailing" secondItem="Jzj-eJ-f0w" secondAttribute="trailingMargin" id="aJ4-ih-RPU"/>
                                                 <constraint firstItem="Bay-EM-VS2" firstAttribute="leading" secondItem="Jzj-eJ-f0w" secondAttribute="leadingMargin" id="awL-28-OSD"/>
                                                 <constraint firstItem="98C-Zs-uDV" firstAttribute="top" secondItem="Jzj-eJ-f0w" secondAttribute="topMargin" id="kpf-wj-Bh8"/>
+                                                <constraint firstItem="Bay-EM-VS2" firstAttribute="centerY" secondItem="Jzj-eJ-f0w" secondAttribute="centerY" id="m7d-Ye-BGa"/>
                                                 <constraint firstItem="Bay-EM-VS2" firstAttribute="top" secondItem="Jzj-eJ-f0w" secondAttribute="topMargin" id="rsj-1o-DPs"/>
                                             </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="JnF-i9-qj2"/>
+                                                    <exclude reference="KiL-yv-lie"/>
+                                                    <exclude reference="NKG-YR-UcU"/>
+                                                    <exclude reference="Y0C-CQ-Jcc"/>
+                                                    <exclude reference="m7d-Ye-BGa"/>
+                                                    <exclude reference="rsj-1o-DPs"/>
+                                                </mask>
+                                            </variation>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="descLbl" destination="b1C-qg-JFY" id="lQZ-54-Tla"/>
