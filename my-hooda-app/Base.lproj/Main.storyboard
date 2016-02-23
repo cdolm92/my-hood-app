@@ -140,7 +140,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uiu-5g-bJU">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make New Post" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JTs-gN-qSF">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make New Post" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JTs-gN-qSF">
                                         <rect key="frame" x="220" y="35" width="160" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="Jm1-jO-BwH"/>
@@ -156,6 +156,9 @@
                                         <state key="normal" title="Cancel">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="cancelBtnPressed:" destination="ifs-Ue-Npq" eventType="touchUpInside" id="60R-gE-4Qs"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -178,6 +181,9 @@
                                 <state key="normal" title="+ Add Pic">
                                     <color key="titleColor" red="0.98039215686274506" green="0.65490196078431373" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="addPicBtnPressed:" destination="ifs-Ue-Npq" eventType="touchUpInside" id="OUn-zR-LAf"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Title" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5hi-9o-A3U">
                                 <rect key="frame" x="20" y="358" width="560" height="40"/>
@@ -213,6 +219,9 @@
                                         <exclude reference="of7-ex-uEP"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="makePostBtnPressed:" destination="ifs-Ue-Npq" eventType="touchUpInside" id="Iyz-FR-xwd"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -238,6 +247,11 @@
                             <constraint firstItem="gb3-6o-r5y" firstAttribute="centerX" secondItem="tKs-E5-dmL" secondAttribute="centerX" id="ylx-I4-ESw"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="descField" destination="YNI-iB-Pbu" id="snM-zq-y6Q"/>
+                        <outlet property="postImg" destination="tKs-E5-dmL" id="ijS-Au-to0"/>
+                        <outlet property="titleField" destination="5hi-9o-A3U" id="Wvx-w8-EdP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="twu-D2-vbc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
