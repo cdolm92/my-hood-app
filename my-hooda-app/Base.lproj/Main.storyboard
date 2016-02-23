@@ -18,15 +18,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="99" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TE4-n8-vdQ">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="99" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TE4-n8-vdQ">
                                 <rect key="frame" x="20" y="84" width="560" height="496"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="99" id="lu6-Oi-eb9">
-                                        <rect key="frame" x="0.0" y="28" width="560" height="99"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="87" id="lu6-Oi-eb9" customClass="PostCell" customModule="my_hooda_app" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="560" height="87"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lu6-Oi-eb9" id="Jzj-eJ-f0w">
-                                            <rect key="frame" x="0.0" y="0.0" width="560" height="98.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="87"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barrel-water-bridge" translatesAutoresizingMaskIntoConstraints="NO" id="Bay-EM-VS2">
@@ -66,6 +66,11 @@
                                                 <constraint firstItem="Bay-EM-VS2" firstAttribute="top" secondItem="Jzj-eJ-f0w" secondAttribute="topMargin" id="rsj-1o-DPs"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="descLbl" destination="b1C-qg-JFY" id="lQZ-54-Tla"/>
+                                            <outlet property="postImg" destination="Bay-EM-VS2" id="3BB-Hn-tPc"/>
+                                            <outlet property="titleLbl" destination="98C-Zs-uDV" id="rbb-PJ-es2"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -109,6 +114,9 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="TE4-n8-vdQ" secondAttribute="bottom" constant="20" id="uec-M2-Z9x"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="TE4-n8-vdQ" id="f3B-uz-CP8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

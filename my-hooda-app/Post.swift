@@ -8,7 +8,7 @@
 
 import Foundation
 
-class post {
+class Post {
     
     private var imagePath: String
     private var title: String
