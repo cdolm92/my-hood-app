@@ -22,7 +22,7 @@
                                 <rect key="frame" x="20" y="84" width="560" height="496"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="87" id="lu6-Oi-eb9" customClass="PostCell" customModule="my_hooda_app" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="87" id="lu6-Oi-eb9" customClass="PostCell" customModule="my_hooda_app" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="560" height="87"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lu6-Oi-eb9" id="Jzj-eJ-f0w">
