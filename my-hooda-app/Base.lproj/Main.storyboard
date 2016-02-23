@@ -168,7 +168,7 @@
                                     <constraint firstItem="JTs-gN-qSF" firstAttribute="centerX" secondItem="Uiu-5g-bJU" secondAttribute="centerX" id="lOu-oL-KFv"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barrel-water-bridge" translatesAutoresizingMaskIntoConstraints="NO" id="tKs-E5-dmL">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tKs-E5-dmL">
                                 <rect key="frame" x="180" y="93" width="240" height="240"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="CkV-p3-65e"/>
