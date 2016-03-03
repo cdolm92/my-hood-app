@@ -19,6 +19,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.dataSource = self
         
         DataService.instance.loadPosts()
+        
+        //6: NSNotificationCenter --> 7:Calls onPostsLoaded
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "onPostsLoaded:", name: "postsLoaded", object: nil)
     }
 
@@ -49,6 +51,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func onPostsLoaded(notif: AnyObject) {
+        //7:Calls onPostsLoaded. Data comes from DataSource in DataService
         tableView.reloadData()
     }
 

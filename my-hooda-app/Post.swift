@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Post: NSObject, NSCoding {
+class Post: NSObject, NSCoding { //The class that we archive needs to inherit from NSObject and NSCoding
     
     private var _imagePath: String!
     private var _title: String!
